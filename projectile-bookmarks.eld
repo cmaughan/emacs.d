@@ -1,0 +1,1 @@
+("~/.emacs.d/" "c:/Dev/mcore2/")

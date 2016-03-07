@@ -44,3 +44,12 @@
 ; Load configuration modules
 (load-user-file "evil.el")
 (load-user-file "appearance.el")
+
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
+
+(require 'helm-config)
+(helm-mode 1)
+
+(global-set-key (kbd "M-x") 'helm-M-x)
