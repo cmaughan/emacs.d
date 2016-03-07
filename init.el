@@ -53,3 +53,26 @@
 (helm-mode 1)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
+
+; Startup windowing
+(setq next-line-add-newlines nil)
+(setq-default truncate-lines t)
+(setq truncate-partial-width-windows nil)
+(split-window-horizontally)
+
+; Stop Emacs from losing undo information by
+; setting very high limits for undo buffers
+(setq undo-limit 20000000)
+(setq undo-strong-limit 40000000)
+
+; Determine the underlying operating system
+(setq is-aquamacs (featurep 'aquamacs))
+(setq is-linux (featurep 'x))
+(setq is-win32 (not (or is-aquamacs is-linux)))
+
+; Best way to get a full screen window on startup
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+; Stop the bell ringing all the time
+(defun nil-bell ())
+(setq ring-bell-function 'nil-bell)

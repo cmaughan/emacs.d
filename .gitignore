@@ -15,6 +15,8 @@ tramp
 # flymake-mode
 *_flymake.*
 
+projectile-bookmarks.eld
+
 # eshell files
 /eshell/history
 /eshell/lastdir
