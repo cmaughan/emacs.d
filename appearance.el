@@ -1,3 +1,5 @@
+(add-to-list 'custom-theme-load-path "~/.emacs.d/tommorow-theme")
+(add-to-list 'load-path "~/.emacs.d/tommmorow-theme")
 
 ; Don't display the ugly startup message (particularly ugly in the GUI)
 (setq inhibit-startup-message t)
@@ -18,5 +20,5 @@
   (setq evil-operator-state-cursor '("red" hollow))
 )
 
-; Use solarized dark (in GUI)
-(when (display-graphic-p) (load-theme 'solarized-dark t))
+(load-theme 'sanityinc-tomorrow-night t)
+
