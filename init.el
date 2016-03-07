@@ -33,8 +33,13 @@
               (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
               (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
               (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))
+
 ; Open at current file dir when tree is opened
 (setq neo-smart-open t)
+
+(add-hook 'c-mode-common-hook
+  (lambda() 
+    (local-set-key (kbd "C-k C-o") 'ff-find-other-file)))
 
 ; Load configuration modules
 (load-user-file "evil.el")
