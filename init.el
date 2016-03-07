@@ -24,6 +24,10 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+(add-to-list 'load-path "~/.emacs.d/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
 ; Load configuration modules
 (load-user-file "evil.el")
 (load-user-file "appearance.el")
