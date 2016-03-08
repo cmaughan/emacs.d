@@ -1,0 +1,63 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/CMarkup/10.0/" . "CMarkup/")
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/CMarkup/" . "10.0/")
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/" . "CMarkup/")
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/" . "Sdk.External/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/cmaughan/.emacs.d/"
+ "c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/CMarkup/10.0/CMarkup/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "helm.el"
+ "source-edit.el"
+ "editing.el"
+ "compile.el"
+ ".#editing.el"
+ "misc.el"
+ "appearance.el"
+ "packages.el"
+ "neotree.el"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/cmaughan/.emacs.d/" (22238 46051 0 0) "source-edit.el" "solarized/" "projectile.cache" "projectile-bookmarks.eld" "packages.el" "neotree.el" "neotree/" "misc.el" "init.el" "ido.last" "helm.el" "evil.el" "evil/" "elpa/" "editing.el" "compile.el" "auto-save-list/" "appearance.el" ".gitmodules" ".gitignore" ".git/" ".#init.el" "../" "./")
+
+ ("c:/Users/cmaughan/" (22237 26145 0 0) "z-location.txt" "wakatime-master/" "VirtualBox VMs/" "vimfiles/" "Videos/" "Tracing/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "p4tickets.txt" "OneDrive/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{4448015f-a04d-11e5-b6bb-e4fefadd3e9c}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{4448015f-a04d-11e5-b6bb-e4fefadd3e9c}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{4448015f-a04d-11e5-b6bb-e4fefadd3e9c}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "mercurial.ini" "Local Settings/" "Links/" "Google Drive/" "Favorites/" "Downloads/" "Documents/" "Desktopee4a25f0-38fa-4264-a43b-c07873f4baf6.dmp" "Desktop/" "Cookies/" "Contacts/" "Conferencing/" "bin/" "Application Data/" "AppData/" "3D Objects/" "2016-01-20-11-43-04.058-VirtualBox.exe-17056.log" "0" ".wakatime.log" ".wakatime.db" ".wakatime.cfg" ".vscode/" ".vs/" ".VirtualBox/" ".viminfo" ".vim/" ".ssh/" ".spacemacs" ".qt-license" ".p4qt/" ".p4merge/" ".oracle_jre_usage/" ".idlerc/" ".gnupg/" ".gitconfig" ".gem/" ".emacs.d/" ".config/" ".bash_history" ".android/" "../" "./")
+
+ ("c:/Users/" (22147 62524 0 0) "Public/" "desktop.ini" "Default.migrated/" "Default User/" "Default/" "cmaughan/" "cmaug/" "All Users/" "../" "./")
+
+ ("c:/sw/" (22228 14439 0 0) "tools/" "temp/" "main/" "devtools/" "devrel/" "automation/" "apps/" "../" "./")
+
+ ("c:/sw/devtools/" (22003 6906 0 0) "Nexus/" "Agora/" "../" "./")
+
+ ("c:/sw/devtools/Agora/" (21990 60724 0 0) "Rel/" "Prebuilt/" "Imports/" "Dev/" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/" (22074 13441 0 0) "QuadDBringup/" "Perfkit/" "NVNGD_Main/" "Main/" "ArchTools/" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/CMarkup/10.0/CMarkup/" (22237 59914 0 0) "Markup.h" "Markup.cpp" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/CMarkup/10.0/" (22237 55361 0 0) "CMarkup.Exports.props" "CMarkup/" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/CMarkup/" (22237 59914 0 0) "cmarkup-10.0.exe.cache" "10.0/" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/Sdk.External/" (22237 55528 0 0) "XmlDiffPatch/" "WpfToolkit/" "Wdk/" "VsSdk/" "VsDiaSdk/" "VcRedist/" "UserExperienceTrackingStub/" "UserExperienceTracking/" "readme.txt" "RadControls/" "QuickGraph/" "Protobuf/" "NLog/" "Moq/" "Mef/" "Irony/" "GMock/" "GardensPoint/" "Flee/" "DirectX/" "DiaSdk/" "DevExpress/" "Detours/" "CMarkup/" "Cecil/" "bin/" "AvalonEdit/" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/Modules/" (22237 55360 0 0) "Sdk.External/" "Imports/" "CMakeLists.txt" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/Nexus/" (22237 64583 0 0) "__Manifest.props" "__ExportLevel.props" "x64/" "vcmake.bat" "Tools/" "QATests/" "Products/" "PerfkitNexusTargetLayout.cmake" "out.txt" "NsightShipping.sln" "NsightShipping.sdf" "NexusProduct.cmake" "Nexus.arkproj" "my.props" "Modules/" "ipch/" "Imports/" "Hosts/" "Graphics/" "GenerateManifestProps.arkproj" "DeployTo/" "Debug/" "CudaWizardsExport.bat" "CudaToolkit.bat" "Cuda/" "Constructed/" "Config.props" "Common/" "CMakeLists.txt" "chuck.pl" "chuck.bat" "BuildMachine.arkproj" "build.pl" "build.bat" "Build/" "bp/" "Bootstrap.arkproj" "Analysis/" ".vs/" "../" "./")
+
+ ("c:/sw/devtools/Agora/Dev/Main/" (22237 57118 0 0) "Ziggurat/" "Specs/" "Shared/" "run_gdb.sh" "PushNvlogConfig.py" "Prebuilt/" "PerfkitSDK/" "PerfkitLegacy/" "out.txt" "Nexus/" "mcchuck.bat" "mcbuild_battle.bat" "mcbuild_all.bat" "mcbuild_32.bat" "mcbootstrap.bat" "Imports/" "fix.reg" "CMakeLists.txt" "chuck.bat" "Chiron/" "Built-Projects/" "Built/" "build.pl" "build.bat" "Build/" "bsrel.bat" "Battle/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
