@@ -36,15 +36,8 @@
 ; Setup my find-files
 (define-key global-map "\ef" 'helm-find-files)
 
-(defun helm-find-file-other-window ()
-  "Find other File"
-  (interactive)
-  (setq thisdir '(file-name-directory load-file-name))
-  (info 'thisdir)
-  (other-window 1)
-  (call-interactively '(helm-find-files 'thisdir)))
-
-(define-key global-map "\eF" 'helm-find-file-other-window)
+; Why does this work with helm?
+(define-key global-map "\eF" 'find-file-other-window)
 
 
 ;(require 'ido)
