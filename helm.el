@@ -37,9 +37,12 @@
 (define-key global-map "\ef" 'helm-find-files)
 
 (defun helm-find-file-other-window ()
-  (other-window 1)
+  "Find other File"
   (interactive)
-  (call-interactively 'helm-find-files '(file-name-directory load-file-name)))
+  (setq thisdir '(file-name-directory load-file-name))
+  (info 'thisdir)
+  (other-window 1)
+  (call-interactively '(helm-find-files 'thisdir)))
 
 (define-key global-map "\eF" 'helm-find-file-other-window)
 
