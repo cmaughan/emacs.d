@@ -1,3 +1,33 @@
+;(load-library "view")
+
+;(defun casey-ediff-setup-windows (buffer-A buffer-B buffer-C control-buffer)
+;  (ediff-setup-windows-plain buffer-A buffer-B buffer-C control-buffer)
+;)
+;(setq ediff-window-setup-function 'casey-ediff-setup-windows)
+;(setq ediff-split-window-function 'split-window-horizontally)
+
+; Accepted file extensions and their appropriate modes
+(setq auto-mode-alist
+      (append
+       '(("\\.cpp$"    . c++-mode)
+         ("\\.hin$"    . c++-mode)
+         ("\\.cin$"    . c++-mode)
+         ("\\.inl$"    . c++-mode)
+         ("\\.rdc$"    . c++-mode)
+         ("\\.h$"    . c++-mode)
+         ("\\.c$"   . c++-mode)
+         ("\\.cc$"   . c++-mode)
+         ("\\.c8$"   . c++-mode)
+         ("\\.txt$" . indented-text-mode)
+         ("\\.emacs$" . emacs-lisp-mode)
+         ("\\.gen$" . gen-mode)
+         ("\\.ms$" . fundamental-mode)
+         ("\\.m$" . objc-mode)
+         ("\\.mm$" . objc-mode)
+         ) auto-mode-alist))
+
+
+
 (require 'cc-mode)
 (add-hook 'c-mode-common-hook 'casey-big-fun-c-hook)
 
@@ -58,7 +88,7 @@
   
   ; 4-space tabs
   (setq tab-width 4
-        indent-tabs-mode nil)
+        indent-tabs-mode t)
 
   ; Additional style stuff
   (c-set-offset 'member-init-intro '++)
@@ -197,7 +227,7 @@
 (defun cmaughan-text-hook ()
   ; 4-space tabs
   (setq tab-width 4
-        indent-tabs-mode nil)
+        indent-tabs-mode t)
 
   ; Newline indents, semi-colon doesn't
   (define-key text-mode-map "\C-m" 'newline-and-indent)

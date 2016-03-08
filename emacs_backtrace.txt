@@ -1,0 +1,7 @@
+
+Exception 0xc0000005 at this address:
+010d85d1
+
+Backtrace:
+01151828
+76a6e5ec
