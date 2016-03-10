@@ -19,7 +19,7 @@
 (load-user-file "helm.el")
 ;:(load-user-file "source-edit.el")
 (load-user-file "editing.el")
-;(load-user-file "compile.el")
+(load-user-file "compile.el")
 (load-user-file "keymap.el")
 (load-user-file "misc.el")
 (load-user-file "cmake.el")

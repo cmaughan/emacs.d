@@ -36,20 +36,11 @@
   (setq compilation-directory-locked nil)
   (message "Compilation directory is roaming."))
 
-(defun find-project-directory ()
-  "Find the project directory."
-  (interactive)
-  (setq find-project-from-directory default-directory)
-  (switch-to-buffer-other-window "*compilation*")
-  (if compilation-directory-locked (cd last-compilation-directory)
-  (cd find-project-from-directory)
-  (find-project-directory-recursive)
-  (setq last-compilation-directory default-directory)))
-
 (defun make-without-asking ()
   "Make the current build."
   (interactive)
-  (if (find-project-directory) (compile casey-makescript))
-  (other-window 1))
+  (progn (compile "build.bat")
+	 (other-window 1)))
+
 (define-key global-map "\em" 'make-without-asking)
 
