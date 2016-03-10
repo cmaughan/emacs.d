@@ -2,6 +2,7 @@
 ; setting very high limits for undo buffers
 (setq undo-limit 20000000)
 (setq undo-strong-limit 40000000)
+(setq large-file-warning-threshold nil)
 
 ; Turn off the bell on Mac OS X
 (defun nil-bell ())

@@ -22,6 +22,7 @@
 ;(load-user-file "compile.el")
 (load-user-file "keymap.el")
 (load-user-file "misc.el")
+(load-user-file "cmake.el")
 
 (setq shift-select-mode nil)
 (setq enable-local-variables nil)
