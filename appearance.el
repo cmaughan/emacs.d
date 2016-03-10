@@ -1,8 +1,5 @@
-;(add-to-list 'custom-theme-load-path "~/.emacs.d/tommorow-theme")
-;(add-to-list 'load-path "~/.emacs.d/tommmorow-theme")
-
 ; Don't display the ugly startup message (particularly ugly in the GUI)
-(setq inhibit-startup-message t)
+;:w(setq inhibit-startup-message t)
 
 ; No toolbar
 (tool-bar-mode -1)
@@ -45,18 +42,32 @@
     nil)
 (setq split-window-preferred-function 'cmaughan-never-split-a-window)
 
-(set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
-(set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood3")
-(set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3")
-(set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-type-face nil :foreground "burlywood3")
-(set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood3")
 
-(set-foreground-color "burlywood3")
-(set-background-color "#161616")
+;       (current-line . "#282a2e")
+;              (selection . "#373b41")
+;              (foreground . "#c5c8c6")
+;              (comment . "#969896")
+;              (red . "#cc6666")
+;              (orange . "#de935f")
+;              (yellow . "#f0c674")
+;              (green . "#b5bd68")
+;              (aqua . "#8abeb7")
+;              (blue . "#81a2be")
+;              (purple . "#b294bb")))
+
+(set-face-attribute 'font-lock-builtin-face nil :foreground "CornflowerBlue")      ; built in functions
+(set-face-attribute 'font-lock-comment-face nil :foreground "OliveDrab")
+(set-face-attribute 'font-lock-constant-face nil :foreground "Yellow")
+(set-face-attribute 'font-lock-doc-face nil :foreground "gray50")      
+(set-face-attribute 'font-lock-function-name-face nil :foreground "#cb4b16")  
+(set-face-attribute 'font-lock-keyword-face nil :foreground "CornflowerBlue")
+(set-face-attribute 'font-lock-string-face nil :foreground "DarkSalmon")
+(set-face-attribute 'font-lock-type-face nil :foreground "CornflowerBlue")
+(set-face-attribute 'font-lock-variable-name-face nil :foreground "DarkSalmon") ; 'int _foo_
+(set-face-attribute 'font-lock-preprocessor-face nil :foreground "lightgrey")
+
+(set-foreground-color "PapayaWhip")
+(set-background-color "#181818")
 (set-cursor-color "#40FF40")
 
 (scroll-bar-mode -1)
@@ -78,3 +89,5 @@
 (setq truncate-partial-width-windows nil)
 (split-window-horizontally)
 
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "midnight blue")

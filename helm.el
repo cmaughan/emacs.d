@@ -33,13 +33,31 @@
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+(defun smart-find-file()
+  "Call `helm-projectile' if `projectile-project-p', otherwise
+fallback to `helm-for-files'."
+  (interactive)
+  (if (projectile-project-p)
+      (helm-projectile-find-file)
+    (helm-find-files nil)))
+
+(defun smart-find-file-other-window()
+  "Call `helm-projectile' if `projectile-project-p', otherwise
+fallback to `helm-for-files'."
+  (interactive)
+  (other-window 1)
+  (if (projectile-project-p)
+      (helm-projectile-find-file)
+    (helm-find-files nil)))
+
+
 ; Setup my find-files
-(define-key global-map "\ef" 'helm-find-files)
+(define-key global-map "\ef" 'smart-find-file)
 
 ; Why does this work with helm?
-(define-key global-map "\eF" 'find-file-other-window)
+(define-key global-map "\eF" 'smart-find-file-other-window)
 
-
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 ;(require 'ido)
 ;(global-set-key (read-kbd-macro "\eb")  'ido-switch-buffer)
 ;(global-set-key (read-kbd-macro "\eB")  'ido-switch-buffer-other-window)
