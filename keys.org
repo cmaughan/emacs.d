@@ -1,0 +1,6 @@
+ALT-f                   : Helm file find
+ALT-F                   : Helm file find other window
+ALT-x                   : Helm meta
+CTRL-x b                : Helm mini - buffers and stuff
+
+ALT-w                   : Other window 

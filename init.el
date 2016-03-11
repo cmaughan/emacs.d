@@ -23,6 +23,7 @@
 (load-user-file "keymap.el")
 (load-user-file "misc.el")
 (load-user-file "cmake.el")
+(load-user-file "org-setup.el")
 
 (setq shift-select-mode nil)
 (setq enable-local-variables nil)
@@ -44,6 +45,7 @@
  '(delete-old-versions (quote other))
  '(imenu-auto-rescan t)
  '(imenu-auto-rescan-maxout 500000)
+ '(inhibit-startup-screen t)
  '(kept-new-versions 5)
  '(kept-old-versions 5)
  '(make-backup-file-name-function (quote ignore))
