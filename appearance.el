@@ -1,5 +1,5 @@
 ; Don't display the ugly startup message (particularly ugly in the GUI)
-;:w(setq inhibit-startup-message t)
+(setq inhibit-startup-message t)
 
 ; No toolbar
 (tool-bar-mode -1)
@@ -79,6 +79,7 @@
 (defun maximize-frame ()
     "Maximize the current frame"
     (interactive)
+    (add-to-list 'initial-frame-alist '(fullscreen . maximized))
     (add-to-list 'default-frame-alist '(fullscreen . maximized)))
 
 (maximize-frame)
