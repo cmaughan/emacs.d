@@ -32,6 +32,12 @@
 (helm-projectile-on)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(global-set-key (kbd "C-x b") 'helm-mini)
+
+;(when (executable-find "ack")
+;  (setq helm-grep-default-command "ack -Hn --no-group --no-color %e %p %f"
+;	helm-grep-default-recurse-command "ack -H --no-group --no-color %e %p %f"))
 
 (defun smart-find-file()
   "Call `helm-projectile' if `projectile-project-p', otherwise
@@ -50,15 +56,17 @@ fallback to `helm-for-files'."
       (helm-projectile-find-file)
     (helm-find-files nil)))
 
+(defun helm-find-files-other-window()
+  "Call helm find file in other window"
+  (interactive)
+  (other-window 1)
+  (helm-find-files nil))
 
 ; Setup my find-files
-(define-key global-map "\ef" 'smart-find-file)
+; Shift F find files in other window
+(define-key global-map "\ef" 'helm-find-files)
+(define-key global-map "\eF" 'helm-find-files-other-window)
 
-; Why does this work with helm?
-(define-key global-map "\eF" 'smart-find-file-other-window)
-
+; Default find is helm
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;(require 'ido)
-;(global-set-key (read-kbd-macro "\eb")  'ido-switch-buffer)
-;(global-set-key (read-kbd-macro "\eB")  'ido-switch-buffer-other-window)
-;(ido-mode t)
+

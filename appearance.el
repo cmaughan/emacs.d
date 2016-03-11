@@ -68,7 +68,7 @@
 
 (set-foreground-color "PapayaWhip")
 (set-background-color "#181818")
-(set-cursor-color "#40FF40")
+(set-cursor-color "#404040")
 
 (scroll-bar-mode -1)
 
