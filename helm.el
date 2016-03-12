@@ -28,6 +28,15 @@
 (helm-mode 1)
 
 (projectile-global-mode)
+(add-to-list 'projectile-globally-ignored-files "*.png")
+(add-to-list 'projectile-globally-ignored-files "*.bmp")
+(add-to-list 'projectile-globally-ignored-files "*.pdb")
+(add-to-list 'projectile-globally-ignored-files "*.obj")
+(add-to-list 'projectile-globally-ignored-files "*.lib")
+(add-to-list 'projectile-globally-ignored-files "build")
+(add-to-list 'projectile-globally-ignored-files "bin")
+
+
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 
