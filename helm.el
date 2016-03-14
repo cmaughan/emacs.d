@@ -1,3 +1,4 @@
+
 (require 'helm)
 (require 'helm-config)
 
@@ -79,3 +80,9 @@ fallback to `helm-for-files'."
 ; Default find is helm
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 
+(custom-set-variables
+ '(helm-follow-mode-persistent t)
+ '(helm-ag-base-command "pt --nocolor --nogroup")
+)
+
+(require 'helm-ag)
