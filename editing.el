@@ -53,3 +53,15 @@ with a Windows external keyboard from time to time."
       (message "Command is now bound to SUPER and Option is bound to META."))))
 
 (global-set-key (kbd "C-c w w") 'swap-meta-and-super)
+
+(defun untab-save-buffer ()
+  "Save the buffer after untabifying it."
+  (interactive)
+  (save-excursion
+    (save-restriction
+      (widen)
+      (untabify (point-min) (point-max))))
+  (save-buffer))
+
+(global-set-key (kbd "\eu") 'untab-save-buffer)
+

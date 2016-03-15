@@ -1,4 +1,5 @@
-(add-to-list 'load-path "~/.emacs.d/evil")
+(use-package evil :ensure evil)
+(use-package evil-org :ensure evil-org)
 
 (require 'evil)
 (evil-mode 1)

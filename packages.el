@@ -1,5 +1,5 @@
 ; Use the package manager
-(push "use-package" load-path)
+(add-to-list 'load-path "~/.emacs.d/use-package/")
 (require 'use-package)
 (require 'package)
 

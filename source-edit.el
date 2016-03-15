@@ -163,7 +163,7 @@
        (setq CorrespondingFileName (concat BaseFileName ".h")))
     (if (string-match "\\.h" buffer-file-name)
        (if (file-exists-p (concat BaseFileName ".c")) (setq CorrespondingFileName (concat BaseFileName ".c"))
-	   (setq CorrespondingFileName (concat BaseFileName ".cpp"))))
+           (setq CorrespondingFileName (concat BaseFileName ".cpp"))))
     (if (string-match "\\.hin" buffer-file-name)
        (setq CorrespondingFileName (concat BaseFileName ".cin")))
     (if (string-match "\\.cin" buffer-file-name)
@@ -191,7 +191,7 @@
   (define-key c++-mode-map [S-tab] 'indent-for-tab-command)
   (define-key c++-mode-map "\C-y" 'indent-for-tab-command)
   (define-key c++-mode-map [C-tab] 'indent-region)
-  (define-key c++-mode-map "	" 'indent-region)
+  (define-key c++-mode-map "  " 'indent-region)
 
   (define-key c++-mode-map "\ej" 'imenu)
 
@@ -214,15 +214,7 @@
   ;(linum-mode)
 )
 
-(defun untab-save-buffer ()
-  "Save the buffer after untabifying it."
-  (interactive)
-  (save-excursion
-    (save-restriction
-      (widen)
-      (untabify (point-min) (point-max))))
-  (save-buffer))
-
+(define-
 ; TXT mode handling
 (defun cmaughan-text-hook ()
   ; 4-space tabs

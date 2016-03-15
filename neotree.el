@@ -1,5 +1,5 @@
 ; NeoTree F8
-(add-to-list 'load-path "~/.emacs.d/neotree")
+(use-package neotree :ensure neotree)
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 (add-hook 'neotree-mode-hook
