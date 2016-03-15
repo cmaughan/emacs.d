@@ -3,3 +3,5 @@
 * META-w other window
 * CTRL-x ' Next compile error M-g n/p for next previous
 * CTRL-x v = Show diffs in ccurrent file, CTRL-x v v
+* META-h select complete expression ?
+* CTRL-h select whole doc

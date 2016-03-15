@@ -22,7 +22,7 @@
 (require 'whitespace)
 (global-whitespace-mode t)
 (setq whitespace-style (quote (spaces face tabs space-mark tab-mark)))
-(set-face-attribute 'whitespace-space nil :background nil :foreground "DimGrey")
+(set-face-attribute 'whitespace-space nil :background (face-background 'default) :foreground "DimGrey")
 (setq whitespace-display-mappings
   ;; all numbers are Unicode codepoint in decimal. ⁖ (insert-char 182 1)
   '(
