@@ -1,3 +1,9 @@
+(use-package helm :ensure helm)
+(use-package projectile :ensure projectile)
+(use-package helm-projectile :ensure helm-projectile)
+(use-package helm-core :ensure helm-core)
+(use-package helm-ag :ensure helm-ag)
+(use-package pt :ensure pt)
 
 (require 'helm)
 (require 'helm-config)

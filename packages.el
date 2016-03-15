@@ -1,15 +1,12 @@
 ; Use the package manager
+(push "use-package" load-path)
+(require 'use-package)
 (require 'package)
 
 (add-to-list 'package-archives
-	'("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives
-	'("melpa-stable" . "http://stable.melpa.org/packages/") t)
+       '("melpa" . "http://stable.melpa.org/packages/"))
 
-(when (< emacs-major-version 24)
-
-	(add-to-list 'package-archives
-		'("gnu" . "http://elpa.gnu.org/packages/")))
-
+(package-refresh-contents)
 (package-initialize)
+
 
