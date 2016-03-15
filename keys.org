@@ -1,6 +1,5 @@
-ALT-f                   : Helm file find
-ALT-F                   : Helm file find other window
-ALT-x                   : Helm meta
-CTRL-x b                : Helm mini - buffers and stuff
-
-ALT-w                   : Other window 
+* META-f, META-F load file
+* CTRL-x b Helm mini
+* META-w other window
+* CTRL-x ' Next compile error M-g n/p for next previous
+* CTRL-x v = Show diffs in ccurrent file, CTRL-x v v
