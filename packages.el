@@ -4,7 +4,7 @@
 (require 'package)
 
 (add-to-list 'package-archives
-       '("melpa" . "http://stable.melpa.org/packages/"))
+       '("melpa" . "http://melpa.org/packages/"))
 
 (package-refresh-contents)
 (package-initialize)
