@@ -57,6 +57,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+
 ; Load configuration modules
 (load-user-file "packages.el")
 (load-user-file "evil.el")

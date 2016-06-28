@@ -71,6 +71,9 @@
 (define-key global-map "\eg" 'goto-line)
 (define-key global-map "\ej" 'imenu)
 
+;(global-set-key (kbd "C-k \C-o") 'helm-projectile-find-other-file)
+
+
 ; Editting
 ;(define-key global-map "" 'copy-region-as-kill)
 ;(define-key global-map "" 'yank)
