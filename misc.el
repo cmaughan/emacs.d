@@ -36,8 +36,4 @@
 )
 (define-key global-map "\eT" 'load-log)
 
-(setq explicit-shell-file-name "c:/Program\ Files\ (x86)/Gow/bin/bash.exe")
-(setq shell-file-name "bash")
-(setq explicit-bash.exe-args '("--noediting" "--login" "-i"))
-(setenv "SHELL" shell-file-name)
-(add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m)
+(global-set-key [f1] 'eshell)

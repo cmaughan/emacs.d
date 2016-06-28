@@ -1,5 +1,6 @@
 ;; Global key bindings
 
+(use-package key-chord :ensure key-chord)
 ;(define-key global-map "\t" 'dabbrev-expand)
 ;(define-key global-map [S-tab] 'indent-for-tab-command)
 ;(define-key global-map [backtab] 'indent-for-tab-command)
@@ -9,6 +10,10 @@
 
 (define-key global-map "\ep" 'quick-calc)
 (define-key global-map "\ew" 'other-window)
+
+(require 'key-chord)
+(key-chord-mode 1)
+(key-chord-define evil-insert-state-map  "jk" 'evil-normal-state)
 
 ; Navigation
 ;(defun previous-blank-line ()
