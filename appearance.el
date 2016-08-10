@@ -68,13 +68,20 @@
     (add-to-list 'initial-frame-alist '(fullscreen . maximized))
     (add-to-list 'default-frame-alist '(fullscreen . maximized)))
 
-(maximize-frame)
+(defun fave-frame ()
+    "Fave frame size"
+    (interactive)
+    (add-to-list 'initial-frame-alist '(height . 50))
+    (add-to-list 'default-frame-alist '(width . 110)))
+
+;(maximize-frame)
+(fave-frame)
 
 ; Startup windowing
 (setq next-line-add-newlines nil)
 (setq-default truncate-lines t)
 (setq truncate-partial-width-windows nil)
-(split-window-horizontally)
+;(split-window-horizontally)
 
 ; Highlight line with a nice blue, no underline
 (global-hl-line-mode 1)
